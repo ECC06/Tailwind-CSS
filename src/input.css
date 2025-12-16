@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer base {
+	li {
+		@apply text-white text-xl;
+	}
+}
