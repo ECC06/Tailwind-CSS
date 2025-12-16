@@ -187,20 +187,8 @@
   .w-full {
     width: 100%;
   }
-  .max-w-125 {
-    max-width: calc(var(--spacing) * 125);
-  }
   .max-w-175 {
     max-width: calc(var(--spacing) * 175);
-  }
-  .max-w-\[175\] {
-    max-width: 175;
-  }
-  .max-w-\[500px\] {
-    max-width: 500px;
-  }
-  .max-w-\[700px\] {
-    max-width: 700px;
   }
   .items-center {
     align-items: center;
