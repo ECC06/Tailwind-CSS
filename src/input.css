@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer base {
+	div {
+		@apply w-full h-16 border text-[40px] text-center;
+	}
+}
+
+@utility orange {
+	@apply bg-orange-500 text-white;
+}
+
+@utility grey {
+	@apply bg-gray-300;
+}

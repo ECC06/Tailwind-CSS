@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./src/output.css" />
+    </head>
+
+    <body>
+        <article class="grid grid-cols-4 w-[90%] mx-auto mt-5">
+            <div
+                class="bg-gray-600 col-span-4 border-0 text-end text-white pr-4 font-light"
+            >
+                0
+            </div>
+            <!-- 1st in the column -->
+            <!-- works, but the rest doesn't -->
+            <div class="grey">AC</div>
+            <div class="grey">+/-</div>
+            <div class="grey">%</div>
+            <div class="orange">÷</div>
+
+            <!-- 2nd in the column -->
+            <div class="grey">7</div>
+            <div class="grey">8</div>
+            <div class="grey">9</div>
+            <div class="orange">x</div>
+
+            <!-- 3rd in the column -->
+            <div class="grey">4</div>
+            <div class="grey">5</div>
+            <div class="grey">6</div>
+            <div class="orange">-</div>
+
+            <!-- 4th in the column -->
+            <div class="grey">1</div>
+            <div class="grey">2</div>
+            <div class="grey">3</div>
+            <div class="orange">+</div>
+
+            <!-- the rest -->
+            <div class="grey col-span-2">0</div>
+            <div class="grey">.</div>
+            <div class="orange">=</div>
+        </article>
+    </body>
+</html>
