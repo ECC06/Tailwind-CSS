@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* dm-sans-latin-wght-normal */
+@font-face {
+	font-family: "DM Sans Variable";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 1000;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/dm-sans:vf@latest/latin-wght-normal.woff2)
+		format("woff2-variations");
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.material-symbols-outlined {
+	font-variation-settings:
+		"FILL" 0,
+		"wght" 400,
+		"GRAD" 0,
+		"opsz" 24;
+}
+
+@theme {
+	--color-drk-green: #083434;
+	--color-lime-green: #b8fe22;
+	--color-black: #1e2222;
+	--color-gray-1: #4e5151;
+	--color-gray-2: #d7dddd;
+	--color-gray-3: #f5f5f5;
+	--color-gray-4: #eef1e8;
+
+	--breakpoint-xs: 30rem; /* 480px */
+	--breakpoint-new-lg: 62rem; /* 992px */
+
+	--text-h1-large: 60px;
+	--text-h1-medium: 56px;
+	--text-h1-small: 40px;
+
+	--text-h2-large: 48px;
+	--text-h2-medium: 46px;
+	--text-h2-small: 36px;
+
+	--text-h3-large: 42px;
+	--text-h3-medium: 40px;
+	--text-h3-small: 32px;
+
+	--text-h4-large: 38px;
+	--text-h4-medium: 36px;
+	--text-h4-small: 28px;
+
+	--text-h5-large: 28px;
+	--text-h5-medium: 26px;
+	--text-h5-small: 24px;
+
+	--text-h6-large: 22px;
+	--text-h6-small: 20px;
+
+	--spacing-min-width: 290px;
+	--spacing-max-width: 1360px;
+}
+
+@layer base {
+	html,
+	body {
+		height: 100%;
+	}
+
+	body {
+		font-size: 18px;
+		letter-spacing: 0.5px;
+		font-family: "DM Sans Variable", sans-serif;
+	}
+}
+
+@layer utilities {
+	.w-custom {
+		width: clamp(290px, 95%, 1360px);
+	}
+
+	.flex-center {
+		@apply flex items-center justify-center;
+	}
+
+	.nav-link-item {
+		@apply px-3 py-1 text-lg font-medium text-drk-green;
+	}
+}
